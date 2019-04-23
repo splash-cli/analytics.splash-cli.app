@@ -38,9 +38,11 @@ const main = async (req, res) => {
 module.exports = morgan("dev")(
 	post(
 		{
-			errorCode: 404,
-			response: "Only post request allowed.",
-			contentType: "text/plain",
+			errorCode: 400,
+			response: {
+				message: "Only post request allowed.",
+			},
+			contentType: "application/json",
 		},
 		rateLimit(
 			{
