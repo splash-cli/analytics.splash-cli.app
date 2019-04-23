@@ -1,0 +1,20 @@
+{
+	"name": "splash-cli-backend-micro-service",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "micro-dev",
+		"start": "micro"
+	},
+	"dependencies": {
+		"micro": "^9.3.3",
+		"micro-cors": "^0.1.1",
+		"micro-dev": "^3.0.0",
+		"micro-morgan": "^0.1.0",
+		"micro-post": "^2.0.0",
+		"micro-ratelimit": "^0.4.0",
+		"mongoose": "^5.5.3",
+		"uuid": "^3.3.2"
+	}
+}
