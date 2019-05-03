@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const post = require("micro-post");
 const morgan = require("micro-morgan");
 const rateLimit = require("micro-ratelimit");
-const User = require("./User");
+const User = require("./models/User");
 
 require("dotenv").load();
 
