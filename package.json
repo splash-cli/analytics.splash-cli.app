@@ -8,6 +8,7 @@
 		"start": "micro"
 	},
 	"dependencies": {
+		"dotenv": "^8.0.0",
 		"micro": "^9.3.3",
 		"micro-cors": "^0.1.1",
 		"micro-dev": "^3.0.0",

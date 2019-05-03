@@ -4,8 +4,10 @@ const morgan = require("micro-morgan");
 const rateLimit = require("micro-ratelimit");
 const User = require("./User");
 
+require("dotenv").load();
+
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGO_URL || "mongodb://127.0.0.1:27017/splash", {
+mongoose.connect(process.env.MONGO_URL, {
 	useNewUrlParser: true,
 });
 
